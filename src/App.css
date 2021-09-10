@@ -1,0 +1,180 @@
+.menu-container {
+  box-shadow: 0 0 1px white;
+  color: white;
+}
+.menu {
+  list-style: none;
+  margin-top: 0px;
+  padding: 10px;
+  float: right;
+}
+.menu > li {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 2px;
+  font-weight: bold;
+  font-size: 11px;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  padding: 10px;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bolder;
+  display: inline-block;
+}
+.mainContainer {
+}
+.img-desc {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 400px;
+}
+
+.imgPlanet {
+  /* width: 300px;
+  margin: auto;
+  height: 300px; */
+  padding: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 60%;
+  overflow: hidden;
+  width: auto;
+  margin: 0 auto;
+}
+.planetDescription {
+  padding: 2px;
+  flex: 40%;
+  color: white;
+  margin-left: 4%;
+  text-align: justify;
+  margin-right: 3%;
+}
+.button1 {
+  width: 86%;
+  justify-content: center;
+  background: transparent;
+  color: white;
+  margin-left: 5%;
+  font-size: large;
+  margin-bottom: 12px;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px white;
+  border: none;
+}
+.button1:hover {
+  background-color: rgb(107, 56, 246);
+}
+
+.buttons {
+  display: inline-block;
+  box-shadow: 0 0 5px white;
+  padding: 15px;
+  margin: 10px;
+  background: transparent;
+  color: white;
+  font-size: 10px;
+  font-family: sans-serif;
+  flex: 1 0 15%;
+  flex-wrap: wrap;
+}
+.buttons:hover {
+  background-color: rgb(107, 56, 246);
+}
+
+button {
+  border: 0vmin white solid;
+  border-width: thin;
+}
+
+.highlight {
+  background-color: #3f27f2;
+}
+
+.buttonTitle {
+  /* margin-top: -20%; */
+  margin-bottom: 20px;
+  font-size: small;
+}
+
+.buttonDesc {
+  font-family: sans-serif;
+  font-size: 27px;
+}
+
+.footer {
+  margin-top: 2%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+
+.toggle {
+  position: absolute;
+  right: 0;
+  top: 9px;
+  display: none;
+}
+
+.sidebar {
+  background-color: rgb(0, 0, 78);
+  position: fixed;
+  right: 0;
+  top: 10;
+  height: 100vh;
+  padding: 0;
+  right: 200%;
+  transition: 0.3s ease-in-out;
+}
+.side-menu {
+  width: 200px;
+  padding: 0;
+}
+.side-menu li {
+  padding: 10px;
+  list-style: none;
+  /*  */
+}
+.side-menu > li a {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 3px;
+  display: block;
+}
+.selected {
+  border-bottom: 2px solid white;
+}
+@media only screen and (max-width: 500px) {
+  .menu {
+    display: none;
+  }
+  .toggle {
+    display: block;
+  }
+  .buttons {
+    flex: 1 0 40%;
+  }
+
+  .img-desc {
+    display: block;
+  }
+  .imgPlanet {
+    width: 80%;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    overflow: hidden;
+  }
+}
